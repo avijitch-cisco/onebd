@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <title>Basic 89</title>
+      <meta charset="UTF-8">
+      <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="layout.css" type="text/css">
+      <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+      <div class="view-account">
+         <section class="module">
+            <div class="module-inner">
+               <div class="side-bar">
+                  <div class="user-info">
+                     <img class="img-profile img-circle img-responsive center-block" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                     <ul class="meta list list-unstyled">
+                        <li class="name">One BD <br>
+                           <label class="label label-info">Asst. Profesor</label>
+                        </li>
+                        <li class="email"><a href="#">onebd@cisco.com</a></li>
+                        <li class="activity">Last logged in: Today at 2:18pm</li>
+                     </ul>
+                  </div>
+                  <nav class="side-menu">
+                     <ul class="nav nav-tabs">
+                        <li class="active">
+                           <a data-toggle="tab" href="#home"><span class="fa fa-user"></span> Home</a>
+                        </li>
+                        <li>
+                           <a data-toggle="tab" href="#schedule">
+                           <span class="fa fa-clock-o"></span> Classes</a>
+                        </li>
+                        <li>
+                           <a data-toggle="tab" href="#attacments"><span class="fa fa-file"></span> Attacments</a>
+                        </li>
+                        <li>
+                           <a data-toggle="tab" href="#messages"><span class="fa fa-envelope"></span> Messages</a>
+                        </li>
+                        <li>
+                           <a href="#"><span class="fa fa-sign-out"></span> Sign Out</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="content-panel">
+                  <div class="image">
+                     <img src="Cisco-Webex-960x270-1.jpg" width="890px" class="img-cover">
+                  </div>
+                  <div class="tab-content">
+                     <div id="home" class="tab-pane fade in active">
+
+                        <div class="bootstrap snippets bootdey">
+                         <div class="row form-button">
+                             <div class="col-sm-8 col-md-8 col-md-offset-2">
+                                 <h1 class="text-center login-title">Start Join Button to start Live</h1>
+                                 <div class="account-wall">
+                                     <form class="form-signin" id="destination">
+                                     <input id="invitee" name="invitee" type="hidden" class="form-control" required autofocus value="avijitch@cisco.com">
+                                     <input id="start_live" class="btn btn-lg btn-primary btn-block" title="join" type="submit" value="join"  />
+                                     <a href="#" class="need-help">Need help? </a><span class="clearfix"></span>
+                                     </form>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                   <div style="display: flex">
+                     <video style="width:100%" id="self-view" muted autoplay></video>
+                     <div style="width:100%">
+                       <audio id="remote-view-audio" autoplay></audio>
+                       <video id="remote-view-video" autoplay></video>
+                     </div>
+                   </div>
+
+                  <button class="cancel_button" style="display: none;" id="hangup" title="hangup" type="button">cancel/hangup</button>
+                     </div>
+                     <div id="schedule" class="tab-pane fade">
+                        <div class="idance">
+                           <div class="schedule content-block">
+                              <h2 data-aos="zoom-in-up" class="aos-init aos-animate">Today</h2>
+                              <div class="timetable">
+                                 <div class="tab-content">
+                                    <div class="tab-pane show active">
+                                       <div class="row">
+                                          <!-- Schedule Item 1 -->
+                                          <div class="col-md-6">
+                                             <div class="timetable-item">
+                                                <div class="timetable-item-img">
+                                                   <img src="https://via.placeholder.com/100x80/FFB6C1/000000" alt="Contemporary Dance">
+                                                </div>
+                                                <div class="timetable-item-main">
+                                                   <div class="timetable-item-time">4:00pm - 5:00pm</div>
+                                                   <div class="timetable-item-name">Contemporary Dance</div>
+                                                   <a href="#" class="btn btn-danger btn-book">Start Class</a>
+                                                   <div class="timetable-item-like">
+                                                      <i class="fa fa-user" aria-hidden="true"></i>
+                                                      <div class="timetable-item-like-count">11</div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Schedule Item 2 -->
+                                          <div class="col-md-6">
+                                             <div class="timetable-item">
+                                                <div class="timetable-item-img">
+                                                   <img src="https://via.placeholder.com/100x80/00FFFF/000000" alt="Break Dance">
+                                                </div>
+                                                <div class="timetable-item-main">
+                                                   <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                                                   <div class="timetable-item-name">Break Dance</div>
+                                                   <a href="#" class="btn btn-success btn-book">Reminder</a>
+                                                   <div class="timetable-item-like">
+                                                      <i class="fa fa-user" aria-hidden="true"></i>
+                                                      <div class="timetable-item-like-count">28</div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Schedule Item 3 -->
+                                          <div class="col-md-6">
+                                             <div class="timetable-item">
+                                                <div class="timetable-item-img">
+                                                   <img src="https://via.placeholder.com/100x80/8A2BE2/000000" alt="Street Dance">
+                                                </div>
+                                                <div class="timetable-item-main">
+                                                   <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                                                   <div class="timetable-item-name">Street Dance</div>
+                                                   <a href="#" class="btn btn-success btn-book">Reminder</a>
+                                                   <div class="timetable-item-like">
+                                                      <i class="fa fa-user" aria-hidden="true"></i>
+                                                      <div class="timetable-item-like-count">28</div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Schedule Item 4 -->
+                                          <div class="col-md-6">
+                                             <div class="timetable-item">
+                                                <div class="timetable-item-img">
+                                                   <img src="https://via.placeholder.com/100x80/6495ED/000000" alt="Yoga">
+                                                </div>
+                                                <div class="timetable-item-main">
+                                                   <div class="timetable-item-time">7:00pm - 8:00pm</div>
+                                                   <div class="timetable-item-name">Yoga</div>
+                                                   <a href="#" class="btn btn-success btn-book">Reminder</a>
+                                                   <div class="timetable-item-like">
+                                                      <i class="fa fa-user" aria-hidden="true"></i>
+                                                      <div class="timetable-item-like-count">23</div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="attacments" class="tab-pane fade">
+                        <div class="row">
+                           <div class="col-sm-4">
+                              <div class="panel panel-dark-outline tabs-panel">
+                                 <div class="panel-heading">
+                                    <ul class="nav nav-tabs pull-left type-document">
+                                       <li class="active"><a data-toggle="tab" href=".documents-panel" aria-expanded="true"> <i class="fa fa-file"></i> Documents</a></li>
+                                       <li class=""><a data-toggle="tab" href=".images-panel" aria-expanded="false"><i class="fa fa-file-image-o"></i> Images </a></li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                 </div>
+                                 <div class="panel-body tab-content">
+                                    <div class="tab-pane active documents-panel">
+                                       <a class="label label-success  label-left" href="#">Excel</a>
+                                       <a class="label label-info label-left" href="#">Word</a> 
+                                       <a class="label label-warning label-left" href="#">Powerpoint</a>
+                                       <a class="label label-danger label-left" href="#">PDF</a>
+                                       <a class="label label-dark label-left" href="#">Video</a>
+                                       <div class="clear"></div>
+                                       <div class="v-spacing-xs"></div>
+                                       <h4 class="no-margin-top"> Folders</h4>
+                                       <ul class="folders list-unstyled">
+                                          <li> 
+                                             <a href="#">
+                                             <i class="fa fa-folder"></i> Web projects
+                                             </a>
+                                          </li>
+                                          <li> 
+                                             <a href="#">
+                                             <i class="fa fa-folder"></i> Presentation files
+                                             </a>
+                                          </li>
+                                          <li> 
+                                             <a href="#">
+                                             <i class="fa fa-folder"></i> Books
+                                             </a>
+                                          </li>
+                                          <li> 
+                                             <a href="#">
+                                             <i class="fa fa-folder"></i> Contest
+                                             </a>
+                                          </li>
+                                          <li> 
+                                             <a href="#">
+                                             <i class="fa fa-folder"></i> Our Projects
+                                             </a>
+                                          </li>
+                                          <li> 
+                                             <a href="#">
+                                             <i class="fa fa-folder"></i> Our Music
+                                             </a>
+                                          </li>
+                                          <li> 
+                                             <a href="#">
+                                             <i class="fa fa-folder"></i> Messenger sounds
+                                             </a>
+                                          </li>
+                                       </ul>
+                                       <div class="v-spacing-xs"></div>
+                                       <a class="btn btn-block btn-success"> <i class="fa fa-plus"> </i> Upload</a>
+                                    </div>
+                                    <div class="tab-pane images-panel">
+                                       <h4 class="no-margin-top"> Folders</h4>
+                                       <ul class="folders list-unstyled">
+                                          <li> 
+                                             <a href="#">
+                                             <i class="fa fa-folder"></i> April meeting
+                                             </a>
+                                          </li>
+                                          <li> 
+                                             <a href="#">
+                                             <i class="fa fa-folder"></i> Application presentation
+                                             </a>
+                                          </li>
+                                          <li> 
+                                             <a href="#">
+                                             <i class="fa fa-folder"></i> Staff profile pictures
+                                             </a>
+                                          </li>
+                                          <li> 
+                                             <a href="#">
+                                             <i class="fa fa-folder"></i> Trip to Yosemite
+                                             </a>
+                                          </li>
+                                       </ul>
+                                       <div class="v-spacing-xs"></div>
+                                       <input type="file" id="myFile" name="filename">
+                                       <a class="btn btn-block btn-success"> 
+                                       <i class="fa fa-plus"> </i> Upload
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-sm-8 tab-content no-bg no-border">
+                              <div class="tab-pane active documents documents-panel">
+                                 <div class="document success">
+                                    <div class="document-body">
+                                       <i class="fa fa-file-excel-o text-success"></i>
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Excel database 2017 </span>
+                                       <span class="document-description"> 1.2 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document">
+                                    <div class="document-body">
+                                       <i class="fa fa-file-excel-o text-success"></i>
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Excel database 2016 </span>
+                                       <span class="document-description"> 1.1 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document info">
+                                    <div class="document-body">
+                                       <i class="fa fa-file-word-o text-info"></i>
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Word file 2017 </span>
+                                       <span class="document-description"> 932 KB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document">
+                                    <div class="document-body">
+                                       <i class="fa fa-file-word-o text-info"></i>
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Word file 2016 </span>
+                                       <span class="document-description"> 426 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document warning">
+                                    <div class="document-body">
+                                       <i class="fa fa-file-powerpoint-o text-warning"></i>
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Presentation 2017 </span>
+                                       <span class="document-description"> 2.7 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document">
+                                    <div class="document-body">
+                                       <i class="fa fa-file-powerpoint-o text-warning"></i>
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Presentation 2016 </span>
+                                       <span class="document-description"> 1.9 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document danger">
+                                    <div class="document-body">
+                                       <i class="fa fa-file-pdf-o text-danger"></i>
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> PDF file 2017 </span>
+                                       <span class="document-description"> 5.3 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document">
+                                    <div class="document-body">
+                                       <i class="fa fa-file-pdf-o text-danger"></i>
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> PDF file 2016 </span>
+                                       <span class="document-description"> 4.4 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document dark">
+                                    <div class="document-body">
+                                       <i class="fa fa-file-video-o text-dark"></i>
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name text-dark"> Video file 2017 </span>
+                                       <span class="document-description"> 18.2 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document">
+                                    <div class="document-body">
+                                       <i class="fa fa-file-video-o text-dark"></i>
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Video file 2016 </span>
+                                       <span class="document-description"> 23.7 MB </span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-pane documents images-panel">
+                                 <div class="document">
+                                    <div class="document-body">
+                                       <img src="https://bootdey.com/img/Content/avatar/avatar6.png">
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Forest.png </span>
+                                       <span class="document-description"> 1.2 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document">
+                                    <div class="document-body">
+                                       <img src="https://bootdey.com/img/Content/avatar/avatar1.png">
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Developer.png </span>
+                                       <span class="document-description"> 2.5 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document">
+                                    <div class="document-body">
+                                       <img src="https://bootdey.com/img/Content/avatar/avatar2.png">
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Meeting.png </span>
+                                       <span class="document-description"> 1.1 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document">
+                                    <div class="document-body">
+                                       <img src="https://bootdey.com/img/Content/avatar/avatar3.png">
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Hiking.png </span>
+                                       <span class="document-description"> 3.5 MB </span>
+                                    </div>
+                                 </div>
+                                 <div class="document">
+                                    <div class="document-body">
+                                       <img src="https://bootdey.com/img/Content/avatar/avatar6.png">
+                                    </div>
+                                    <div class="document-footer">
+                                       <span class="document-name"> Developers meeting.png </span>
+                                       <span class="document-description"> 862 KB </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="messages" class="tab-pane fade">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="chat_container">
+                                 <div class="job-box">
+                                    <div class="job-box-filter">
+                                       <div class="row">
+                                          <div class="col-md-6 col-sm-6">
+                                             <label>
+                                                Show 
+                                                <select name="datatable_length" class="form-control input-sm">
+                                                   <option value="10">10</option>
+                                                   <option value="25">25</option>
+                                                   <option value="50">50</option>
+                                                   <option value="100">100</option>
+                                                </select>
+                                                entries
+                                             </label>
+                                          </div>
+                                          <div class="col-md-6 col-sm-6">
+                                             <div class="filter-search-box text-right">
+                                                <label>Search:<input type="search" class="form-control input-sm" placeholder=""></label>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="inbox-message">
+                                       <ul>
+                                          <li>
+                                             <a href="#">
+                                                <div class="message-avatar">
+                                                   <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                                                </div>
+                                                <div class="message-body">
+                                                   <div class="message-body-heading">
+                                                      <h5>Daniel Dock <span class="unread">Unread</span></h5>
+                                                      <span>7 hours ago</span>
+                                                   </div>
+                                                   <p>Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor....</p>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="message-avatar">
+                                                   <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+                                                </div>
+                                                <div class="message-body">
+                                                   <div class="message-body-heading">
+                                                      <h5>Daniel Dock <span class="unread">Unread</span></h5>
+                                                      <span>7 hours ago</span>
+                                                   </div>
+                                                   <p>Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor....</p>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="message-avatar">
+                                                   <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                                                </div>
+                                                <div class="message-body">
+                                                   <div class="message-body-heading">
+                                                      <h5>Daniel Dock <span class="pending">Pending Work</span></h5>
+                                                      <span>7 hours ago</span>
+                                                   </div>
+                                                   <p>Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor....</p>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="message-avatar">
+                                                   <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="">
+                                                </div>
+                                                <div class="message-body">
+                                                   <div class="message-body-heading">
+                                                      <h5>Daniel Dock <span class="unread">Unread</span></h5>
+                                                      <span>7 hours ago</span>
+                                                   </div>
+                                                   <p>Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor....</p>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="message-avatar">
+                                                   <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="">
+                                                </div>
+                                                <div class="message-body">
+                                                   <div class="message-body-heading">
+                                                      <h5>Daniel Dock <span class="business">Business</span></h5>
+                                                      <span>7 hours ago</span>
+                                                   </div>
+                                                   <p>Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor....</p>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="message-avatar">
+                                                   <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
+                                                </div>
+                                                <div class="message-body">
+                                                   <div class="message-body-heading">
+                                                      <h5>Daniel Dock <span class="important">Important</span></h5>
+                                                      <span>7 hours ago</span>
+                                                   </div>
+                                                   <p>Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor....</p>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="message-avatar">
+                                                   <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                                                </div>
+                                                <div class="message-body">
+                                                   <div class="message-body-heading">
+                                                      <h5>Daniel Dock <span class="unread">Unread</span></h5>
+                                                      <span>7 hours ago</span>
+                                                   </div>
+                                                   <p>Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor....</p>
+                                                </div>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </section>
+         </div>
+      </div>
+   </body>
+   <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+   <script crossorigin src="https://unpkg.com/webex@^1/umd/webex.min.js"></script>
+   <script src="js/index.js"></script>
+   <script type="text/javascript">
+      $( "#start_live" ).click(function() {
+        $('.form-button').hide();
+        $('.cancel_button').show();
+      });      
+
+      $( ".cancel_button" ).click(function() {
+        $('.form-button').show();
+        $('.cancel_button').hide();
+      });
+   </script>
